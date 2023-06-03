@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "./productSummary.scss";
 import { TbShoppingCartX } from "react-icons/tb";
 import { BiCategory, BiDollarCircle, BiCart } from "react-icons/bi";
+import { MdOutlineAccountBalanceWallet } from "react-icons/md";
 import InfoBox from "../../infoBox/InfoBox";
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -18,6 +19,7 @@ const earningIcon = <BiDollarCircle size={24} color="#fff" />;
 const productIcon = <BiCart size={24} color="#fff" />;
 const categoryIcon = <BiCategory size={24} color="#fff" />;
 const outOfStockIcon = <TbShoppingCartX size={24} color="#fff" />;
+const balanceIcon = <MdOutlineAccountBalanceWallet size={24} color= "#fff" />
 
 // Format Amount
 export const formatNumbers = (x) => {
@@ -63,6 +65,11 @@ const ProductSummary = ({ products }) => {
           title={"Jumlah Kategori"}
           count={category.length}
           bgColor="card4"
+        />
+        <InfoBox
+          icon= {balanceIcon}
+          title={"Saldo"}
+          bgColor="card5"
         />
       </div>
     </div>
