@@ -89,7 +89,7 @@ const AddProduct = () => {
   return (
     <div>
       {isLoading && <Loader />}
-      <h3 className="--mt">Add New Product</h3>
+      <h3 className="--mt">Tambah Produk Baru</h3>
       <ProductForm
         product={product}
         imagePreview={imagePreview}

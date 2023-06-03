@@ -5,11 +5,11 @@
   --header-height: 45px;
 
   --font-family: "Poppins", sans-serif;
-  --dark-blue: #0D2350;
   --light-blue: #1f93ff;
+  --light-green: #A1C181;
 
   --color-white: #fff;
-  --color-dark: #333;
+  --color-dark: #233D4D;
 
   --color-grey: #eee;
   --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -17,6 +17,9 @@
   --color-pink: #F22E57;
   --color-purple: #5751EA;
   --color-orange: #ff7722;
+  --color-yellow: #FCCA46;
+  --color-green: #619B8A;
+
 
   --color-primary: #007bff;
   --color-success: #28a745;
@@ -195,7 +198,7 @@ p {
 }
 
 .--color-primary {
-  color: #F22E57;
+  color: var(--color-orange);
 }
 .--color-danger {
   color: orangered;
@@ -316,21 +319,21 @@ p {
 
 .--btn-primary {
   color: #fff;
-  background: #F22E57;
+  background: #FE7F2D;
   padding: 8px 24px;
 }
 
 .--btn-primary:hover {
-  background: #FA5A7B;
+  background: #FFB26B;
 }
 
 .--btn-secondary {
   color: #fff;
-  background: var(--color-purple);
+  background: var(--color-orange);
 }
 
 .--btn-secondary:hover {
-  background: #807bff;
+  background: #FFB26B;
 }
 
 .--btn-danger {
@@ -496,7 +499,7 @@ ul {
 
 .pagination .page-num:hover {
   color: #fff;
-  background-color: var(--color-pink);
+  background-color: var(--color-yellow);
 }
 
 .page-num-btn{
@@ -505,11 +508,11 @@ ul {
   border-radius: 8px;
   font-weight: normal;
   color: white;
-  background-color: var(--color-purple);
+  background-color: var(--color-orange);
 }
 
 .page-num-btn:hover{
-  background-color: #807bff;
+  background-color: #FFB26B;
 }
 
 

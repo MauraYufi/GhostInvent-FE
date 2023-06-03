@@ -135,19 +135,19 @@ const ProductList = ({ products, isLoading }) => {
                           <Link to={`/product-detail/${_id}`}>
                             <IoEyeSharp
                               size={20}
-                              color={`var(--color-purple)`}
+                              color={`var(--color-green)`}
                             />
                           </Link>
                         </span>
                         <span>
                           <Link to={`/edit-product/${_id}`}>
-                            <MdEdit size={20} color={`var(--color-purple)`} />
+                            <MdEdit size={20} color={`var(--color-orange)`} />
                           </Link>
                         </span>
                         <span>
                           <IoTrash
                             size={20}
-                            color={`var(--color-pink)`}
+                            color={`var(--color-dark)`}
                             onClick={() => confirmDelete(_id)}
                           />
                         </span>

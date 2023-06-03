@@ -12,7 +12,7 @@ main {
   width: 230px;
   height: 100%;
   flex-shrink: 0;
-  background-color: var(--dark-blue);
+  background-color: #619B8A;
   overflow: auto;
   color: var(--color-white);
   transition: all 0.5s;
@@ -24,7 +24,7 @@ main {
   padding: 10px 15px;
   // border-bottom: 2px solid #ccc;
   transition: all 0.3s;
-  background-color: var(--dark-blue);
+  background-color: var(--color-green);
   height: 70px;
 }
 .ivtlogo {
@@ -57,7 +57,7 @@ main {
 }
 
 .sidebar-item:hover {
-  background-color: #08183a;
+  background-color: var(--color-dark);
 }
 
 .sidebar-title {
@@ -68,7 +68,7 @@ main {
 }
 
 .sidebar-title:hover{
-  color: #5751EA;
+  color: var(--color-yellow);
 }
 
 .sidebar-title span {
@@ -118,7 +118,7 @@ a {
 }
 
 .active {
-  color: var(--color-pink);
+  color: var(--color-dark);
   display: block;
   position: relative;
   width: 100%;
@@ -132,7 +132,7 @@ a {
   height: 100%;
   right: 0;
   top: 0;
-  background-color: var(--color-pink);
+  background-color: var(--color-dark);
 }
 
 .sublink .sidebar-item .sidebar-title {
