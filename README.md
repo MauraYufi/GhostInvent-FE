@@ -68,22 +68,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-## Link github BE (Backend) : 
-```sh
-https://github.com/sidqiaverroes/iNventory_BE
-   ``` 
-## Link Slide Presentasi :
- ```sh
-   https://drive.google.com/drive/folders/1eXvxnTVU27m9j9rkaYk4-vHx65c4kn9t?usp=share_link
-   ``` 
-
-## Link Web App : 
-```sh
-   https://inventory-fe.vercel.app/
-   ``` 
-
-## Link Penilaian Kelompok :
-```sh
-   https://docs.google.com/spreadsheets/d/1tMqtY5ZjAGyMaj7RTuwy_Bc1NXWZj_DXO3vyPC92bAQ/edit?usp=sharing
-   ```
