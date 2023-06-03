@@ -39,7 +39,7 @@ const ProductDetail = () => {
 
   return (
     <div className="product-detail">
-      <h3 className="--mt">Product Detail</h3>
+      <h3 className="--mt">Detail Produk</h3>
       <Card cardClass="card">
         {isLoading && <SpinnerImg />}
         {product && (
@@ -51,24 +51,24 @@ const ProductDetail = () => {
                 alt="productimage"
               />
             ) : (
-              <p>No image set for this product</p>
+              <p>Tidak ada gambar untuk barang ini</p>
             )}
 
             <hr />
             <h4>{product.name}</h4>
 
             <p>
-              <b> Category : </b> {product.category}
+              <b> Kategori : </b> {product.category}
             </p>
             <p>
-              <b> Price : </b> {"$"}
+              <b> Harga : </b> {"Rp "}
               {product.price}
             </p>
             <p>
-              <b> Quantity in stock : </b> {product.quantity}
+              <b> Jumlah Stok : </b> {product.quantity}
             </p>
             <p>
-              <b>Total Value in stock : </b> {"$"}
+              <b>Total Nilai Barang : </b> {"Rp "}
               {product.price * product.quantity}
             </p>
             <hr />
@@ -79,11 +79,11 @@ const ProductDetail = () => {
             ></div>
             <hr />
             <code className="--color-dark">
-              Created on: {product.createdAt.toLocaleString("en-US")}
+              Tanggal Barang Masuk: {product.createdAt.toLocaleString("en-US")}
             </code>
             <br />
             <code className="--color-dark">
-              Last Updated: {product.updatedAt.toLocaleString("en-US")}
+              Tanggal Terakhir Diupdate: {product.updatedAt.toLocaleString("en-US")}
             </code>
           </div>
         )}

@@ -10,26 +10,26 @@ const menu = [
     path: "/dashboard",
   },
   {
-    title: "Add Product",
+    title: "Tambah Barang",
     icon: <BiAddToQueue />,
     path: "/add-product",
   },
   {
-    title: "Account",
+    title: "Akun",
     icon: <RiAccountCircleLine />,
     childrens: [
       {
-        title: "Profile",
+        title: "Profil",
         path: "/profile",
       },
       {
-        title: "Edit Profile",
+        title: "Edit Profil",
         path: "/edit-profile",
       },
     ],
   },
   {
-    title: "Contact Us",
+    title: "Kontak Kami",
     icon: <HiOutlineChat />,
     path: "/contact-us",
   },

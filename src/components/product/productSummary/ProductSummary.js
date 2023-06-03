@@ -38,29 +38,29 @@ const ProductSummary = ({ products }) => {
 
   return (
     <div className="product-summary">
-      <h3 className="--mt">Inventory Stats</h3>
+      <h3 className="--mt">Status Inventori</h3>
       <div className="info-summary">
         <InfoBox
           icon={productIcon}
-          title={"Total Items"}
+          title={"Total Jumlah Barang"}
           count={products.length}
           bgColor="card1"
         />
         <InfoBox
           icon={earningIcon}
-          title={"Total Value"}
+          title={"Total Nilai Barang"}
           count={`Rp${formatNumbers(totalStoreValue.toFixed(2))}  `}
           bgColor="card2"
         />
         <InfoBox
           icon={outOfStockIcon}
-          title={"Out of Stock"}
+          title={"Barang Habis"}
           count={outOfStock}
           bgColor="card3"
         />
         <InfoBox
           icon={categoryIcon}
-          title={"All Categories"}
+          title={"Jumlah Kategori"}
           count={category.length}
           bgColor="card4"
         />

@@ -41,15 +41,15 @@ const ProductList = ({ products, isLoading }) => {
 
   const confirmDelete = (id) => {
     confirmAlert({
-      title: "Delete Product",
-      message: "Are you sure you want to delete this product.",
+      title: "Hapus Barang",
+      message: "Apakah anda yakin ingin menghapus barang",
       buttons: [
         {
-          label: "Delete",
+          label: "Hapus",
           onClick: () => delProduct(id),
         },
         {
-          label: "Cancel",
+          label: "Batal",
           // onClick: () => alert('Click No')
         },
       ],
@@ -84,7 +84,7 @@ const ProductList = ({ products, isLoading }) => {
       <div className="table">
         <div>
           <span>
-            <h3>Inventory Items</h3>
+            <h3>Barang Inventori</h3>
           </span>
           <span>
             <Search
@@ -104,12 +104,12 @@ const ProductList = ({ products, isLoading }) => {
               <thead>
                 <tr>
                   <th>No</th>
-                  <th>Name</th>
-                  <th>Category</th>
-                  <th>Price</th>
-                  <th>Quantity</th>
-                  <th>Value</th>
-                  <th>Action</th>
+                  <th>Nama</th>
+                  <th>Kategori</th>
+                  <th>Harga</th>
+                  <th>Jumlah</th>
+                  <th>Nilai Barang</th>
+                  <th>Aksi</th>
                 </tr>
               </thead>
 
@@ -161,11 +161,11 @@ const ProductList = ({ products, isLoading }) => {
         </div>
         <ReactPaginate
           breakLabel="..."
-          nextLabel="Next"
+          nextLabel="Selanjutnya"
           onPageChange={handlePageClick}
           pageRangeDisplayed={3}
           pageCount={pageCount}
-          previousLabel="Prev"
+          previousLabel="Sebelumnya"
           renderOnZeroPageCount={null}
           containerClassName="pagination"
           pageLinkClassName="page-num"

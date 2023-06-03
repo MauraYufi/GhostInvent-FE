@@ -33,7 +33,7 @@ const Contact = () => {
       <div className="section">
         <Card cardClass="card">
           <form onSubmit={sendEmail}>
-            <label>Subject</label>
+            <label>Subjek</label>
             <input
               type="text"
               name="subject"
@@ -42,7 +42,7 @@ const Contact = () => {
               value={subject}
               onChange={(e) => setSubject(e.target.value)}
             />
-            <label>Message</label>
+            <label>Pesan</label>
             <textarea
               cols="30"
               rows="10"
@@ -55,24 +55,24 @@ const Contact = () => {
               className="--btn --btn-primary"
               style={{ marginTop: "2rem" }}
             >
-              Send Message
+              Kirim Pesan
             </button>
           </form>
         </Card>
 
         <div className="details">
           <Card cardClass={"card2"}>
-            <h3>Our Contact Information</h3>
-            <p>Fill the form or contact us via other channels listed below</p>
+            <h3>Informasi Kontak Kami</h3>
+            <p>Silakan isi form atau kontak kami melalui platform di bawah</p>
 
             <div className="icons">
               <span>
                 <FaPhoneAlt />
-                <p>08123456789 </p>
+                <p>081239058393 </p>
               </span>
               <span>
                 <FaEnvelope />
-                <p>paw10patrol@outlook.com</p>
+                <p>IAI_Ghostery@outlook.com</p>
               </span>
               <span>
                 <GoLocation />
@@ -80,7 +80,7 @@ const Contact = () => {
               </span>
               <span>
                 <FaTwitter />
-                <p>@pawpatrol10</p>
+                <p>@Ghostery</p>
               </span>
             </div>
           </Card>

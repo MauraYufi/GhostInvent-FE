@@ -68,7 +68,7 @@ const ChangePassword = () => {
             onChange={handleInputChange}
           />
           <button type="submit" className="--btn --btn-primary">
-            Change Password
+            Ubah Password
           </button>
         </form>
       </Card>

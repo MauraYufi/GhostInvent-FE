@@ -20,7 +20,7 @@ const Sidebar = ({ children }) => {
         <div className="top_section">
           <div className="logo" style={{ display: isOpen ? "block" : "none" }}>
             <span className="ivtlogo" onClick={goHome}>
-              IVT
+              Ghostery
             </span>
           </div>
 

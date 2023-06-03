@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div className="home">
       <nav className="container --flex-between ">
-        <div className="logo">IVT</div>
+        <div className="logo">GHOSTERY</div>
 
         <ul className="home-links">
           <ShowOnLogout>
@@ -35,14 +35,13 @@ const Home = () => {
       {/* HERO SECTION */}
       <section className="container hero">
         <div className="hero-text">
-          <h2>Let’s manage your stuff</h2>
+          <h2>Kelola Barang dan Sumber Daya Rumah Sakit</h2>
           <p>
-            Inventory system to control and manage proucts in the warehouse to
-            help you develop your business.
+            Inventory penyimpanan barang kesehatan untuk peningkatan manajemen dan kontrol di rumah sakit.
           </p>
           <div className="hero-buttons">
             <Link to="/dashboard">
-              <button className="--btn --btn-primary"> Manage </button>
+              <button className="--btn --btn-primary"> Kelola </button>
             </Link>
           </div>
         </div>

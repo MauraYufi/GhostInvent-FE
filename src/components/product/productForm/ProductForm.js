@@ -19,7 +19,7 @@ const ProductForm = ({
           <div className="form-parent">
             <div className="prod-details">
               <span>
-                <label>Product Name</label>
+                <label>Nama Barang</label>
                 <input
                   type="text"
                   name="name"
@@ -29,7 +29,7 @@ const ProductForm = ({
               </span>
 
               <span>
-                <label>Product Category</label>
+                <label>Kategori Barang</label>
                 <input
                   type="text"
                   name="category"
@@ -39,7 +39,7 @@ const ProductForm = ({
               </span>
 
               <span>
-                <label>Product Price</label>
+                <label>Harga Barang</label>
                 <input
                   type="text"
                   name="price"
@@ -50,7 +50,7 @@ const ProductForm = ({
               </span>
 
               <span>
-                <label>Product Quantity</label>
+                <label>Jumlah Barang</label>
                 <input
                   type="text"
                   name="quantity"
@@ -61,7 +61,7 @@ const ProductForm = ({
             </div>
             <div className="prod-details-2">
               <Card cardClass={"group"}>
-                <label>Product Image</label>
+                <label>Gambar Barang</label>
                 <code className="--color-dark">
                   Supported Formats: jpg, jpeg, png
                 </code>
@@ -76,12 +76,12 @@ const ProductForm = ({
                     <img src={imagePreview} alt="product" />
                   </div>
                 ) : (
-                  <p>No image set for this poduct.</p>
+                  <p>Tidak ada gambar yang ditambahkan untuk barang ini</p>
                 )}
               </Card>
               <span>
                 <label style={{ marginBottom: "8px" }}>
-                  Product Description
+                  Deskripsi Barang
                 </label>
                 <textarea
                   type="text"
@@ -94,7 +94,7 @@ const ProductForm = ({
           </div>
           <div className="--my btnsaveprod">
             <button type="submit" className="--btn --btn-secondary">
-              Save Product
+              Simpan Barang
             </button>
           </div>
         </form>

@@ -12,11 +12,11 @@ const Forgot = () => {
   const forgot = async (e) => {
     e.preventDefault();
     if (!email) {
-      return toast.error("Please enter an email");
+      return toast.error("Mohon Masukkan Email");
     }
 
     if (!validateEmail(email)) {
-      return toast.error("Please enter a valid email");
+      return toast.error("Mohon Masukkan Email yang Tervalidasi");
     }
 
     const userData = {
@@ -37,7 +37,7 @@ const Forgot = () => {
               Home
             </span>
           </Link>
-          <h2>Forgot Password</h2>
+          <h2>Lupa Password?</h2>
 
           <form onSubmit={forgot}>
             <input
@@ -50,11 +50,11 @@ const Forgot = () => {
             />
 
             <button type="submit" className="--btn --btn-primary --btn-block">
-              Get Reset Email
+              Dapatkan Email Reset
             </button>
             <div className={styles.links}>
               <Link to="/login" className="back">
-                Back to Login
+                Kembali Login
               </Link>
             </div>
           </form>
