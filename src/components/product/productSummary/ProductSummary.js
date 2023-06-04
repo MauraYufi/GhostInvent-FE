@@ -86,7 +86,7 @@ const fetchBalance = async () => {
         <InfoBox
           icon= {balanceIcon}
           title={"Saldo"}
-          count={balance}
+          count={`Rp${formatNumbers(parseInt(balance).toFixed(2))}`}
           bgColor="card5"
         />
       </div>
