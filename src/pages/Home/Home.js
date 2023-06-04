@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Home.scss";
-import heroImg from "../../assets/hero.png";
+import homeImg from "../../assets/Home.svg";
 import { ShowOnLogin, ShowOnLogout } from "../../components/protect/HiddenLink";
 
 const Home = () => {
@@ -32,7 +32,7 @@ const Home = () => {
           </ShowOnLogin>
         </ul>
       </nav>
-      {/* HERO SECTION */}
+      {/* HOME SECTION */}
       <section className="container hero">
         <div className="hero-text">
           <h2>Kelola Barang dan Sumber Daya Rumah Sakit</h2>
@@ -46,7 +46,7 @@ const Home = () => {
           </div>
         </div>
 
-        <img className="hero-image" src={heroImg} alt="Inventory" />
+        <img className="hero-image" src={homeImg} alt="Inventory" />
       </section>
     </div>
   );
