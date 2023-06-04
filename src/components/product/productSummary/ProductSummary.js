@@ -13,6 +13,8 @@ import {
   selectOutOfStock,
   selectTotalStoreValue,
 } from "../../../redux/features/product/productSlice";
+import getBalances from "../../../redux/features/balance";
+import { useState } from "react";
 
 // Icons
 const earningIcon = <BiDollarCircle size={24} color="#fff" />;
@@ -31,7 +33,22 @@ const ProductSummary = ({ products }) => {
   const totalStoreValue = useSelector(selectTotalStoreValue);
   const outOfStock = useSelector(selectOutOfStock);
   const category = useSelector(selectCategory);
+  const [balance, setBalance] = useState("");
 
+useEffect(()=>{
+  fetchBalance();
+},[])
+
+const fetchBalance = async () => {
+  try {
+    const response = await getBalances();
+    console.log(response);
+    const balanceValue = response.data.balance;
+    setBalance(balanceValue);
+  } catch (error) {
+    console.error(error);
+  }
+};
   useEffect(() => {
     dispatch(CALC_STORE_VALUE(products));
     dispatch(CALC_OUTOFSTOCK(products));
@@ -69,6 +86,7 @@ const ProductSummary = ({ products }) => {
         <InfoBox
           icon= {balanceIcon}
           title={"Saldo"}
+          count={balance}
           bgColor="card5"
         />
       </div>

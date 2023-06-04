@@ -7,11 +7,13 @@ const API_URL = `${BACKEND_URL}/api/balances/`;
 // Get all balances
 const getBalances = async () => {
     const response = await axios.get(API_URL);
-    return response.data;
+    console.log(response);
+    return response;
+    
   };
 
 const balance = {
     getBalances
 };
   
-export default balance;
+export default getBalances;
