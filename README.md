@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## About The Project
+
+This the frontend side of the full project that is intended to fullfill the task of Integration of Application and Information. Ghostery is an hospital's inventory management web app for record and monitor entry and exit or buy and issue hospital equipment that is integrated with the hospital cashflow application.
+
 ## Available Scripts
 
 In the project directory, you can run:
