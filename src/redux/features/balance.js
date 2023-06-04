@@ -14,4 +14,4 @@ const balance = {
     getBalances
 };
   
-export default productService;
+export default balance;
